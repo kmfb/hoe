@@ -2,7 +2,7 @@
   "name": "@kmfb/hoe",
   "version": "1.0.9",
   "description": "",
-  "module": "./dist/hoe.es.js",
+  "module": "./lib/index.es.js",
   "types": "./lib/index.d.ts",
   "files": [
     "dist",
