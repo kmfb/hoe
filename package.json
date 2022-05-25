@@ -5,6 +5,10 @@
   "main": "./dist/hoe.umd.js",
   "module": "./dist/hoe.es.js",
   "types": "./lib/index.d.ts",
+  "files": [
+    "dist",
+    "lib"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc -p tsconfig.build.json"

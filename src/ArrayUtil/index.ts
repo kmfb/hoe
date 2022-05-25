@@ -4,7 +4,9 @@ export interface ArrayUtil {
     getValueByKeyInArray: GetValueByKeyInArray;
 }
 
-export const arrayUtil: ArrayUtil = {
+const arrayUtil: ArrayUtil = {
     getValueByKeyInArray
 }
+
+export default arrayUtil
 
