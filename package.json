@@ -1,6 +1,6 @@
 {
   "name": "@kmfb/hoe",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "module": "./dist/hoe.es.js",
   "types": "./lib/index.d.ts",
