@@ -1,28 +1,32 @@
 interface GetValueByKeyInArrayConfig {
-  keyPropertyName: string;
-  valuePropertyName: string;
+  keyPropertyName: string
+  valuePropertyName: string
+}
+
+type Item = {
+  [x: string]: string
 }
 
 export type GetValueByKeyInArray = (
-  arr: Array<any>,
+  arr: Array<Item>,
   key: string,
   config: GetValueByKeyInArrayConfig
-) => string;
+) => string
 
 export const getValueByKeyInArray: GetValueByKeyInArray = (
-  arr: Array<any>,
+  arr: Array<Item>,
   key: string,
   config = {
-    keyPropertyName: "key",
-    valuePropertyName: "label",
+    keyPropertyName: 'key',
+    valuePropertyName: 'label',
   }
 ) => {
-  const { keyPropertyName, valuePropertyName } = config;
+  const { keyPropertyName, valuePropertyName } = config
 
-  const findItem = arr.find((item) => item[keyPropertyName] === key);
+  const findItem = arr.find((item) => item[keyPropertyName] === key)
 
   if (findItem) {
-    return findItem[valuePropertyName];
+    return findItem[valuePropertyName]
   }
-  return "";
-};
+  return ''
+}
