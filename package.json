@@ -11,7 +11,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc -p tsconfig.build.json",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
@@ -24,8 +25,12 @@
   },
   "homepage": "https://github.com/kmfb/hoe#readme",
   "devDependencies": {
+    "@commitlint/config-conventional": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
+    "commitizen": "^4.2.4",
+    "commitlint": "^17.0.1",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.16.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -43,5 +48,10 @@
     "*.{html,css,less,scss,md}": [
       "prettier --write"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
