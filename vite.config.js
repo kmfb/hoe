@@ -7,8 +7,8 @@ module.exports = defineConfig({
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
       formats: ['es'], // 指定打包模式为 es
-      name: "hoe",
-      fileName: (format) => `hoe.${format}.js`,
+      name: "index",
+      fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
     //   // 确保外部化处理那些你不想打包进库的依赖
@@ -20,6 +20,6 @@ module.exports = defineConfig({
     //     },
     //   },
     },
-    outdir: "lib"
+    outDir: "lib",
   },
 });
