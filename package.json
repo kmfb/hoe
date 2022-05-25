@@ -2,7 +2,6 @@
   "name": "@kmfb/hoe",
   "version": "1.0.6",
   "description": "",
-  "main": "./dist/hoe.umd.js",
   "module": "./dist/hoe.es.js",
   "types": "./lib/index.d.ts",
   "files": [

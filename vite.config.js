@@ -6,7 +6,7 @@ module.exports = defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
-      // formats: ['es'], // 指定打包模式为 es
+      formats: ['es'], // 指定打包模式为 es
       name: "hoe",
       fileName: (format) => `hoe.${format}.js`,
     },
