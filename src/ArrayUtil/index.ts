@@ -1,12 +1,14 @@
-import { GetValueByKeyInArray, getValueByKeyInArray } from "./getValueByKeyInArray";
+import {
+  GetValueByKeyInArray,
+  getValueByKeyInArray,
+} from './getValueByKeyInArray'
 
 export interface ArrayUtil {
-    getValueByKeyInArray: GetValueByKeyInArray;
+  getValueByKeyInArray: GetValueByKeyInArray
 }
 
 const arrayUtil: ArrayUtil = {
-    getValueByKeyInArray
+  getValueByKeyInArray,
 }
 
 export default arrayUtil
-
