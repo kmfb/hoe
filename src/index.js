@@ -1,4 +1,4 @@
-const getValueByKeyInArray = (
+export const getValueByKeyInArray = (
     arr,
     key,
     config = {
@@ -16,4 +16,3 @@ const getValueByKeyInArray = (
     return "";
   };
 
-exports.getValueByKeyInArray = getValueByKeyInArray;
