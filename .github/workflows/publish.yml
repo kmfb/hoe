@@ -1,10 +1,10 @@
 name: Publish package to npm
 
-# trigger this workflow only when commits are pushed to master branch
+# trigger this workflow only when a push of specific tags occurs
 on:
   push:
-    branches:
-      - master
+    tags:
+      - v1.**
 
 jobs:
   # build is the job name (could be anything)
@@ -18,8 +18,8 @@ jobs:
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v2
         with:
-          node-version: "16.x"
-          registry-url: "https://registry.npmjs.org"
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
 
       # make build
       - run: npm install
