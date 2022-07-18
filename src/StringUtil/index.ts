@@ -1,4 +1,4 @@
-import { isJSON } from "./isJSON"
+import { isJSON } from './isJSON'
 
 const stringUtil = {
   isJSON,
