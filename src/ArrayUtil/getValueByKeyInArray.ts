@@ -10,7 +10,7 @@ type Item = {
 export type GetValueByKeyInArray = (
   arr: Array<Item>,
   key: string,
-  config: GetValueByKeyInArrayConfig
+  config?: GetValueByKeyInArrayConfig
 ) => string
 
 export const getValueByKeyInArray: GetValueByKeyInArray = (
