@@ -13,6 +13,11 @@ export type GetValueByKeyInArray = (
   config?: GetValueByKeyInArrayConfig
 ) => string
 
+export const ANTD_SELECT_OPTION_CONFIG = {
+  keyPropertyName: 'value',
+  valuePropertyName: 'title',
+}
+
 export const getValueByKeyInArray: GetValueByKeyInArray = (
   arr: Array<Item>,
   key: string,
